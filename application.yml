@@ -42,10 +42,11 @@ info: # Application-Info for the Info-Actuator
   artifact: "@project.artifactId@"
   description: "@project.description@"
   version: "@project.version@"
-  spring-boot: "@project.parent.version@"
+    spring-boot: "@spring-boot.version@"
   # Tags for the Spring Boot Admin UI
   tags:
-    spring-boot: "@pom.parent.version@"
+    spring-boot: "@spring-boot.version@"
+
 logging: # Logging-File for the Logfile-Actuator
   file:
     name: "@project.artifactId@.log"
