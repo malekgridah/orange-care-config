@@ -4,7 +4,7 @@ eureka:
     fetchRegistry: false
 management: # Actuator Configuration
   server:
-    port: 8082
+    port: 0
   endpoints:
     web:
       exposure:
