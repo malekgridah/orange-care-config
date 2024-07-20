@@ -1,6 +1,2 @@
-spring:
-  application:
-    name: "@project.artifactId@"
-
 logging:
   file: "${application.name}.log"
