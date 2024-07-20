@@ -11,3 +11,43 @@ eureka:
     registryFetchIntervalSeconds: 5
     serviceUrl:
       defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8761}/eureka/
+---
+management: # Actuator Configuration
+  server:
+    port: 0
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint: # Health-Actuator
+    health:
+      show-details: always
+      probes:
+        enabled: true
+    env: # Environment-Actuator
+      show-values: always # caution: can reveal passwords
+    configprops: # Configuration-Actuator
+      show-values: always # caution: can reveal passwords
+  info: # Info-Actuator
+    java:
+      enabled: true
+    os:
+      enabled: true
+    build:
+      enabled: true
+    env:
+      enabled: true
+    git:
+      enabled: true
+info: # Application-Info for the Info-Actuator
+  group: "@pom.groupId@"
+  artifact: "@pom.artifactId@"
+  description: "@pom.description@"
+  version: "@pom.version@"
+  spring-boot: "@spring-boot.version@"
+  spring-cloud: "@spring-cloud.version@"
+  # Tags for the Spring Boot Admin UI
+  tags:
+    spring-boot: "@spring-boot.version@"
+    spring-cloud: "@spring-cloud.version@"
+
