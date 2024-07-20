@@ -1,3 +1,10 @@
+spring:
+  application: # Application-Info for the Info-Actuator
+    name: "@project.artifactId@"
+  output:
+    ansi:
+      enabled: always
+      
 server:
   port: 0
 
