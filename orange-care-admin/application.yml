@@ -1,12 +1,4 @@
 spring:
-  profiles:
-    active: secure
-logging: # Logging-File for the Logfile-Actuator
-  file:
-    name: "spring-boot-admin.log"
-
----
-spring:
   boot:
     admin:
       ui:
@@ -24,19 +16,6 @@ spring:
             800: "#d96300"
             900: "#000000"
 
-
----
-# tag::customization-external-views-simple-link[]
-spring:
-  boot:
-    admin:
-      ui:
-        external-views:
-          - label: "🚀" #<1>
-            url: "http://192.168.10.95:13088/admx_full/login" #<2>
-            order: 2000 #<3>
-            iframe: true
-
         title: Orange Apps Admin
         brand: "<img src=\"assets/img/logo.png\"><span>Orange Apps Admin</span>"
         available-languages:
@@ -44,12 +23,4 @@ spring:
           - fr
         favicon: logo.png
         login-icon: assets/img/logo.png
----
-eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 10
-    health-check-url-path: /actuator/health
-    metadata-map:
-      startup: ${random.int}    #needed to trigger info and endpoint update after restart
-  client:
-    registryFetchIntervalSeconds: 5
+        
