@@ -3,6 +3,24 @@
 #                 Web Services Configuration                  #
 ###############################################################
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  #<2>
+  endpoint:
+    health:
+      show-details: ALWAYS
+info: # Application-Info for the Info-Actuator
+  group: "@pom.groupId@"
+  artifact: "@pom.artifactId@"
+  description: "@pom.description@"
+  version: "@pom.version@"
+  spring-boot: "@spring-boot.version@"
+  # Tags for the Spring Boot Admin UI
+  tags:
+    spring-boot: "@spring-boot.version@"
+
 
 #############################
 #                           #
