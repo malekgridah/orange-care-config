@@ -1,3 +1,16 @@
 spring:
   config:
     import: webservices.yml
+
+info: # Application-Info for the Info-Actuator
+  group: "@pom.groupId@"
+  artifact: "@pom.artifactId@"
+  description: "@pom.description@"
+  version: "@pom.version@"
+  spring-boot: "@spring-boot.version@"
+  spring-cloud: "@spring-cloud.version@"
+  # Tags for the Spring Boot Admin UI
+  tags:
+    version: "@pom.version@"
+    spring-boot: "@spring-boot.version@"
+    spring-cloud: "@spring-cloud.version@"
