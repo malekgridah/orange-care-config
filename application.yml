@@ -44,5 +44,5 @@ management: # Actuator Configuration
       enabled: true
 logging:
   file:
-    name: logs/${spring.application.name}
+    name: logs/${spring.application.name}.log
 
