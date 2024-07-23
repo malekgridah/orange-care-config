@@ -18,6 +18,8 @@ springdoc:
     path:  "/swagger-ui.html"
 
 management: # Actuator Configuration
+  server:
+    port: 0
   endpoints:
     web:
       exposure:
