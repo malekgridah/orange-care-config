@@ -4,3 +4,8 @@ endpoint:
       url: http://192.168.10.95:13001/wsi/services/
       username: ADMX
       password: ADMX
+      
+    contract-handling:
+      url: http://192.168.10.54:8080/ContractHandling/services/ContractHandling?wsdl
+      user: ADMX
+      pass: ADMX
