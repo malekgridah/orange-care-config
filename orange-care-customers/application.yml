@@ -6,6 +6,7 @@ endpoint:
       password: ADMX
 
     ### CustomerHandling Web Service Endpoint ######
-    customer-handling-url: http://192.168.10.54:8080/CustomerHandling/services/CustomerHandling?wsdl
-    customer-handling-user: ADMX
-    customer-handling-pass: ADMX
+    customer-handling:
+      url: http://192.168.10.54:8080/CustomerHandling/services/CustomerHandling?wsdl
+      user: ADMX
+      pass: ADMX
