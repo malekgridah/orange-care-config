@@ -1,7 +1,7 @@
 endpoint:
   service:
     wsi:
-      url: http://192.168.10.95:13002/wsi/services/
+      url: http://192.168.10.95:13001/wsi/services/
       username: ADMX
       password: ADMX
 
