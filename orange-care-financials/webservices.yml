@@ -5,7 +5,7 @@ financial:
         search:
           url: http://192.168.10.95:13001/wsi/services/ws_CIL_7_FinancialTransactionSearchService.wsdl
           username: ADMX
-          password: ADMX
+          password: ADMXX
 
         read:
           url: http://192.168.10.95:13001/wsi/services/ws_CIL_7_FinancialTransactionReadService.wsdl
