@@ -25,8 +25,8 @@ payment:
 
       financial-document:
         search:
-          url: http://192.168.10.95:13001/wsi/services/ws_CIL_7_FinancialDocumentSearchService.wsdl
-          username: ADMXZ
+          url: http://192.168.10.22:13001/wsi/services/ws_CIL_7_FinancialDocumentSearchService.wsdl
+          username: ADMX
           password: ADMX
 
         read:
