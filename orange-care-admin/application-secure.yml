@@ -1,16 +1,16 @@
 spring:
   security:
     user:
-      name: "ADMX"
-      password: "ADMX"
+      name: "BSCSWS1"
+      password: "BSCSWS1"
   boot:
     admin:
       client:
-        username: "ADMX"       #These two are needed so that the client
-        password: "ADMX"   #can register at the protected server api
+        username: "BSCSWS1"       #These two are needed so that the client
+        password: "BSCSWS1"   #can register at the protected server api
         instance:
           metadata:
-            user.name: "ADMX"         #These two are needed so that the server
-            user.password: "ADMX" #can access the protected client endpoints
+            user.name: "BSCSWS1"         #These two are needed so that the server
+            user.password: "BSCSWS1" #can access the protected client endpoints
 
 info.tags.security: secured
