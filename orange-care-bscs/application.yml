@@ -13,16 +13,16 @@
 endpoint:
   service:
     ######  WSI Web Services Endpoint  ######
-    wsi-url: http://192.168.10.95:13001/wsi/services/
-    wsi-user: ADMX
-    wsi-pass: ADMX
+    wsi-url: http://192.168.10.95:13056/wsi/services/
+    wsi-user: BSCSWS1
+    wsi-pass: BSCSWS1
 
     ### ContractHandling Web Service Endpoint ######
     contract-handling-url: http://192.168.10.54:8080/ContractHandling/services/ContractHandling?wsdl
-    contract-handling-user: ADMX
-    contract-handling-pass: ADMX
+    contract-handling-user: BSCSWS1
+    contract-handling-pass: BSCSWS1
 
     ### CustomerHandling Web Service Endpoint ######
     customer-handling-url: http://192.168.10.54:8080/CustomerHandling/services/CustomerHandling?wsdl
-    customer-handling-user: ADMX
-    customer-handling-pass: ADMX
+    customer-handling-user: BSCSWS1
+    customer-handling-pass: BSCSWS1
